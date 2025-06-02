@@ -1,60 +1,98 @@
-site_name: SafeKeys - Docs
+site_name: SafeKeys - Documentation
+
 theme:
   name: material
   features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.prefetch
     - navigation.tabs
-    - navigation.sections
-    - toc.integrate
     - navigation.top
-    - search.suggest
+    - navigation.path
     - search.highlight
+    - content.code.copy
+    - content.code.select
     - content.tabs.link
     - content.code.annotation
-    - content.code.copy
+    - toc.integrate
+    - navigation.sections
+    - search.suggest
   language: en
+  icon:
+    repo: fontawesome/brands/github
   palette:
-    - scheme: default
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      scheme: default
+      primary: white
+      accent: amber
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: teal
-      accent: purple
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-auto
         name: Switch to light mode
-      primary: teal
-      accent: lime
-      
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
 plugins:
-  - social
   - search
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/james-willett
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/TheJamesWillett
+      link: https://github.com/CapelleGab
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/willettjames/
+      link: https://www.linkedin.com/in/CapelleGab/
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - attr_list
+  - md_in_html
   - admonition
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
+  - tables
+  - toc:
+      permalink: true
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
+  - def_list
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/CapelleGab"  target="_blank" rel="noopener">Gabin CAPELLE</a>
+  &copy; 2024 <a href="https://github.com/SafeKeys-App"  target="_blank" rel="noopener">SafeKeys Team</a>
