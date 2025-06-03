@@ -1,6 +1,5 @@
 # SafeKeys Documentation
 
-[![Documentation Status](https://img.shields.io/badge/docs-live-brightgreen.svg)](https://safekeys-docs.netlify.app)
 [![Built with MkDocs](https://img.shields.io/badge/Built%20with-MkDocs-blue.svg)](https://www.mkdocs.org/)
 [![Material Theme](https://img.shields.io/badge/Theme-Material-orange.svg)](https://squidfunk.github.io/mkdocs-material/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
